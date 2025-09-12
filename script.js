@@ -63,7 +63,7 @@ function changeBackground(weatherDescription) {
   } else if (desc.includes('kar')) {
     videoFile = 'snowy.mp4';
   }
-
+  console.log("Seçilen Video:", videoFile);
   videoSource.setAttribute('src',videoFile);
   videoElement.load();
 }
@@ -82,5 +82,6 @@ window.onload = function () {
 // setInterval(() => {
 //   getWeather();
 // }, 10 * 60 * 1000);
+
 
 
