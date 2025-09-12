@@ -64,7 +64,7 @@ function changeBackground(weatherDescription) {
     videoFile = 'snowy.mp4';
   }
 
-  videoSource.setAttribute('src',{videoFile}`);
+  videoSource.setAttribute('src',videoFile);
   videoElement.load();
 }
 
@@ -82,4 +82,5 @@ window.onload = function () {
 // setInterval(() => {
 //   getWeather();
 // }, 10 * 60 * 1000);
+
 
